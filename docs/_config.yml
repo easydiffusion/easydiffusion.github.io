@@ -28,7 +28,8 @@ url: "https://stable-diffusion-ui.github.io" # the base hostname & protocol for 
 #github_username:  jekyll
 
 # Build settings
-theme: minima
+#theme: minima
+theme: aksakalli/jekyll-doc-theme@gh-pages
 plugins:
   - jekyll-feed
 
