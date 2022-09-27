@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Samplers"
-permalink: /guides/samplers/
+permalink: /docs/samplers/
 ---
 
 # Useful explanation on samplers

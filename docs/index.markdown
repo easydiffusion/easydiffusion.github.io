@@ -2,14 +2,14 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: home
+#layout: home
 ---
 # Stable Diffusion UI v2
 ### A simple 1-click way to install and use [Stable Diffusion](https://github.com/CompVis/stable-diffusion) on your own computer. No dependencies or technical knowledge required.
 
 <p float="left">
-  <a href="#installation"><img src="https://github.com/cmdr2/stable-diffusion-ui/raw/develop/media/download-win.png" width="200" /></a>
-  <a href="#installation"><img src="https://github.com/cmdr2/stable-diffusion-ui/raw/develop/media/download-linux.png" width="200" /></a>
+  <a href="docs/installation/"><img src="https://github.com/cmdr2/stable-diffusion-ui/raw/develop/media/download-win.png" width="200" /></a>
+  <a href="docs/installation/"><img src="https://github.com/cmdr2/stable-diffusion-ui/raw/develop/media/download-linux.png" width="200" /></a>
 </p>
 
 [![Discord Server](https://img.shields.io/discord/1014774730907209781?label=Discord)](https://discord.com/invite/u9yhsFmEkB) (for support, and development discussion) | [Troubleshooting guide for common problems](Troubleshooting.md)
@@ -44,22 +44,6 @@ This distribution currently uses Stable Diffusion 1.4. Once the model for 1.5 be
 2. An NVIDIA graphics card, preferably with 4GB or more of VRAM. But if you don't have a compatible graphics card, you can still use it with a "Use CPU" setting. It'll be very slow, but it should still work.
 
 You do not need anything else. You do not need WSL, Docker or Conda. The installer will take care of it.
-
-# Installation
-1. **Download** [for Windows](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.16/stable-diffusion-ui-win64.zip) or [for Linux](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.16/stable-diffusion-ui-linux.tar.xz).
-
-2. **Extract**:
-  - For Windows: After unzipping the file, please move the `stable-diffusion-ui` folder to your `C:` (or any drive like D:, at the top root level), e.g. `C:\stable-diffusion-ui`. This will avoid a common problem with Windows (file path length limits).
-  - For Linux: After extracting the .tar.xz file, please open a terminal, and go to the `stable-diffusion-ui` directory.
-
-3. **Run**:
-  - For Windows: `Start Stable Diffusion UI.cmd` by double-clicking it.
-  - For Linux: In the terminal, run `./start.sh` (or `bash start.sh`)
-
-This will automatically install Stable Diffusion, set it up, and start the interface. No additional steps are needed.
-
-**To Uninstall:** Just delete the `stable-diffusion-ui` folder to uninstall all the downloaded packages.
-
 
 # Usage
 Open http://localhost:9000 in your browser (after running step 3 previously). It may take a few moments for the back-end to be ready.
