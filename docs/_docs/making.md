@@ -4,7 +4,7 @@ permalink: /docs/making/
 ---
 
 # Making images
-Open http://localhost:9000 in your browser (after running step 3 previously). It may take a few moments for the back-end to be ready.
+Open [http://localhost:9000](http://localhost:9000) in your browser (after completing the [installation](installation/)). It may take a few moments for the back-end to be ready.
 
 ## With a text description
 1. Enter a text prompt, like `a photograph of an astronaut riding a horse` in the textbox.
