@@ -1,6 +1,7 @@
 # stable-diffusion-ui.github.io
 
 This repo contains the documentation for Stable Diffusion UI.
+The source code for Stable Diffusion UI is in [the repo cmdr2/stable-diffusion-ui](https://github.com/cmdr2/stable-diffusion-ui).
 
 The documentation can be found in the gh-pages branch in the docs folder. It is using Jekyll as templating engine and github actions to automatically push the 
 content to the web page.
