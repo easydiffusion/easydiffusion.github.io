@@ -68,9 +68,12 @@ Users don't need to have the Anaconda Prompt installed to do this anymore, since
 ### Windows
 1. Open the terminal: Press Win+R, type "cmd", and press "Run"
 2. Type `cd C:\stable-diffusion-ui` and press enter
+
     If you've installed Stable Diffusion UI to a different drive (e.g. to `X:\stable-diffusion-ui`), you have to first change drives:
+
     Type `X:` and press enter, then
-    type `cd \stable-diffusion-ui` and press enter
+    
+    Type `cd \stable-diffusion-ui` and press enter
 4. Type `installer\Scripts\activate.bat` and press enter
 5. Type `cd stable-diffusion` and press enter
 6. Type `conda activate .\env` and press enter
