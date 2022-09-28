@@ -454,3 +454,22 @@ a.list-group-item {
     border-color: #000;
   }
 }
+
+p.note {
+    background-color: #222222;
+    position: relative;
+    border-radius: 4px;
+    padding-left: 50px;
+        
+}
+
+.note:after {
+    content: '\24D8';
+    color: #ccf;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
