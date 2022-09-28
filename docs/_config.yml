@@ -31,8 +31,8 @@ url: "https://stable-diffusion-ui.github.io" # the base hostname & protocol for 
 #theme: minima
 remote_theme: aksakalli/jekyll-doc-theme@gh-pages
 
-git_address: https://github.com/stable-diffusion-ui/stable-diffusion-io.github.io
-git_edit_address: https://github.com/stable-diffusion-ui/stable-diffusion-io.github.io/blob/gh-pages
+git_address: https://github.com/stable-diffusion-ui/stable-diffusion-ui.github.io
+git_edit_address: https://github.com/stable-diffusion-ui/stable-diffusion-ui.github.io/blob/gh-pages/docs/
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
