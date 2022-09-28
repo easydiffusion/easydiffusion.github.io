@@ -16,3 +16,5 @@ content to the web page.
 
 # Github actions
 In  `Settings -> Pages`, github actions is configured to publish the page from the branch and the subfolder. 
+It takes about one to two minutes between commit and publication. If you have the feeling that something went
+wrong, you can [inspect the job's results](https://github.com/stable-diffusion-ui/stable-diffusion-ui.github.io/actions).
