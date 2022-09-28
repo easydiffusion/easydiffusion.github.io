@@ -1,8 +1,13 @@
 ---
-layout: page
 title: "Installation"
 permalink: /docs/installation/
 ---
+
+# System Requirements
+1. Windows 10/11, or Linux. Experimental support for Mac is coming soon.
+2. An NVIDIA graphics card, preferably with 4GB or more of VRAM. But if you don't have a compatible graphics card, you can still use it with a "Use CPU" setting. It'll be very slow, but it should still work.
+
+You do not need anything else. You do not need WSL, Docker or Conda. The installer will take care of it.
 
 # Installation
 1. **Download** [for Windows](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.16/stable-diffusion-ui-win64.zip) or [for Linux](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.16/stable-diffusion-ui-linux.tar.xz).

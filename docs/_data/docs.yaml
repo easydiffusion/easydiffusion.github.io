@@ -1,4 +1,9 @@
+- title: Getting started
+  docs:
+    - installation
+    - troubleshooting
 - title: Usage
   docs:
+    - making
+    - settings
     - samplers
-    - install
