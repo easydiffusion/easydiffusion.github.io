@@ -20,7 +20,6 @@ This distribution currently uses Stable Diffusion 1.4. Once the model for 1.5 be
 - **New UI**: with cleaner design
 - **Waifu Model Support**: Just replace the `stable-diffusion\sd-v1-4.ckpt` file after installation with the Waifu model
 - Supports "*Text to Image*" and "*Image to Image*"
-- **NSFW Setting**: A setting in the UI to control *NSFW content*
 - **Use CPU setting**: If you don't have a compatible graphics card, but still want to run it on your CPU.
 - **Auto-updater**: Gets you the latest improvements and bug-fixes to a rapidly evolving project.
 - **Low Memory Usage**: Creates 512x512 images with less than 4GB of VRAM!
