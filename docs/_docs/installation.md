@@ -24,11 +24,12 @@ This will automatically install Stable Diffusion, set it up, and start the inter
 1. [**Download** for Linux](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.4.13/stable-diffusion-ui-linux.zip)
 
 2. **Extract**:
-  - Extract the file with your favourite file manager, or use `tar Jxvf stable-diffusion-ui-linux.tar.xz` in a terminal.
-  - After extracting the .tar.xz file, please open a terminal, and go to the `stable-diffusion-ui` directory.
+  - Extract the file with your favourite file manager. If file extension were ".tar.xz" You may use `tar Jxvf stable-diffusion-ui-linux.tar.xz` in a terminal.
+  - After extracting the compressed (.zip or .tar.xz) file, please open a terminal, and go to the `stable-diffusion-ui` directory.
 
 3. **Run**:
-  - In the terminal, run `./start.sh` (or `bash start.sh`)
+  - In the terminal, run `chmod a+x ./start.sh`
+  - Then `./start.sh` (or `bash start.sh`).
 
 This will automatically install Stable Diffusion, set it up, and start the interface. No additional steps are needed.
 
