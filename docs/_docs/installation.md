@@ -12,7 +12,7 @@ You do not need anything else. You do not need WSL, Docker or Conda. The install
 ## Installation
 
 ### Windows
-1. [**Download** for Windows](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.4.13/stable-diffusion-ui-windows.zip)
+1. [**Download** for Windows](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.5.15/stable-diffusion-ui-windows.zip)
 2. **Extract**:
     After unzipping the file, please move the `stable-diffusion-ui` folder to your `C:` (or any drive like D:, at the top root level), e.g. `C:\stable-diffusion-ui`. This will avoid a common problem with Windows (file path length limits).
 3. **Run**:
@@ -21,7 +21,7 @@ You do not need anything else. You do not need WSL, Docker or Conda. The install
 This will automatically install Stable Diffusion, set it up, and start the interface. No additional steps are needed.
 
 ### Linux
-1. [**Download** for Linux](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.4.13/stable-diffusion-ui-linux.zip)
+1. [**Download** for Linux](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.5.15/stable-diffusion-ui-linux.zip)
 
 2. **Extract**:
   - Extract the file with your favourite file manager, or use `tar Jxvf stable-diffusion-ui-linux.tar.xz` in a terminal.
