@@ -6,6 +6,7 @@ permalink: /docs/installation/
 ## System Requirements
 1. Windows 10/11, Linux or Mac.
 2. An NVIDIA graphics card, preferably with 4GB or more of VRAM or an M1 or M2 Mac. But if you don't have a compatible graphics card, you can still use it with a "[Use CPU](/docs/settings/#system-settings)" setting. It'll be very slow, but it should still work.
+3. 8GB of RAM and 20GB of disk space.
 
 You do not need anything else. You do not need WSL, Docker or Conda. The installer will take care of it.
 
