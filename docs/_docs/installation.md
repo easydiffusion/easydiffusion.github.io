@@ -13,7 +13,7 @@ You do not need anything else. You do not need WSL, Docker or Conda. The install
 ## Installation
 
 ### Windows
-1. [**Download** for Windows](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.5.24/Easy-Diffusion-Windows.exe)
+1. [**Download** for Windows](https://github.com/cmdr2/stable-diffusion-ui/releases/latest/download/Easy-Diffusion-Windows.exe)
 2. Run the downloaded Easy-Diffusion-Windows.exe file. 
 3. Run Easy Diffusion once the installation finishes. You can also start from your Start Menu, or from your desktop (if you created a shortcut).
 
@@ -32,7 +32,7 @@ This will automatically install Easy Diffusion, set it up, and start the interfa
 This will automatically install Easy Diffusion, set it up, and start the interface. No additional steps are needed.
 
 ### MacOS
-1. [**Download** for MacOS](https://github.com/cmdr2/stable-diffusion-ui/releases/download/v2.5.24/Easy-Diffusion-Mac.zip)
+1. [**Download** for MacOS](https://github.com/cmdr2/stable-diffusion-ui/releases/latest/download/Easy-Diffusion-Mac.zip)
 
 2. **Extract**:
   - Extract the file with your favourite file manager, or use `unzip Easy-Diffusion-Mac.zip` in a terminal.
