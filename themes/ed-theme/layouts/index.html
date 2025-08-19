@@ -1,0 +1,63 @@
+{{ define "main" }}
+<div class="wrapper">
+    <div class="header-container jumbotron" style="background-image: url({{ "img/bg.webp" | relURL }})">
+        <div class="container" style="background: url({{ "img/transparent_bg.png" | relURL }}); border-radius: 12pt; padding: 18pt; padding-bottom: 8pt">
+            <h1 style="font-size: 35pt; padding: 0; margin: 0; margin-bottom: 10pt">Easy Diffusion 3.0</h1>
+            <p style="font-size: 14pt">A simple 1-click way to create beautiful artwork on your computer using AI. No dependencies or technical knowledge required.</p>
+            <p><a class="btn btn-primary btn-lg" href="https://github.com/easydiffusion/easydiffusion#features" role="button" style="background: #565657; border: 1px solid #776969">Learn more</a>
+                <a class="btn btn-primary btn-lg" href="https://github.com/easydiffusion/easydiffusion#installation" role="button" style="background: #5300b8; border: 1px solid #6700e1;">Download</a>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="header-light regular-pad">What is Easy Diffusion?</h2>
+                <p class="lead" style="font-size: 14pt">
+                Easy Diffusion is an easy to install and use distribution of <a href="https://github.com/CompVis/stable-diffusion">Stable Diffusion</a>, 
+                the leading open source text-to-image AI software.
+                Easy Diffusion installs all required software components required to run Stable Diffusion <strong>plus</strong> its own user friendly
+                and powerful web interface <strong>for free</strong>.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="{{ "img/splash.webp" | relURL }}" alt="screenshot" class="img-responsive">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
+                <h3 class="text-center">Easy to Install</h3>
+                <p><a href="https://github.com/easydiffusion/easydiffusion#installation">Get started by downloading</a> the software and running the simple installer.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h1 class="text-center"><i class="fa fa-cogs" aria-hidden="true"></i></h1>
+                <h3 class="text-center">Make Images</h3>
+                <p>
+                <a href="https://github.com/easydiffusion/easydiffusion/wiki/How-to-Use">Make beautiful images</a> from your text prompts or use images to direct the AI.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h1 class="text-center"><i class="fa fa-comments" aria-hidden="true"></i></h1>
+                <h3 class="text-center">Active Community</h3>
+                <p>
+                <a href="https://discord.com/invite/u9yhsFmEkB">Join our active community on discord</a> and learn about the endless possibilities of 
+                AI generated images.<br><img src="https://img.shields.io/discord/1014774730907209781?label=Discord" alt="discord server"></a>
+                </p>
+                If you're a developer, you can support <a href="https://github.com/easydiffusion/easydiffusion">our github project</a>.
+            </div>
+        </div>
+        <hr>
+        <h2>Disclaimer</h2>
+        <p>The authors of this project are not responsible for any content generated using this interface.</p>
+        <p>The <a href="https://github.com/easydiffusion/easydiffusion/blob/main/LICENSE">license of this software</a>
+            forbids you from sharing any content that violates any laws, produce any 
+            harm to a person, disseminate any personal information that would be meant for harm, spread misinformation, 
+            or target vulnerable groups. For the full list of restrictions please read the license. You agree to these 
+            terms by using this software.
+        </p>
+    </div>
+    </div>
+{{ end }}

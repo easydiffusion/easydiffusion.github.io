@@ -1,0 +1,18 @@
+{{ $ctx := .Context }}
+{{ $pages := .Pages }}
+
+{{ if gt (len $pages) 0 }}
+  {{ $paginator := $ctx.Paginate ($pages.ByDate.Reverse) }}
+  {{ range $paginator.Pages }}
+    <article style="margin-bottom: 2em;">
+      <h2><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></h2>
+      {{ with .Params.tags }}
+        <p>Tags: {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ "/tags/" | relURL }}{{ $t | urlize }}">{{ $t }}</a>{{ end }}</p>
+      {{ end }}
+      <p>{{ .Summary }}</p>
+    </article>
+  {{ end }}
+  {{ template "_internal/pagination.html" $ctx }}
+{{ else }}
+  <!-- no posts -->
+{{ end }}

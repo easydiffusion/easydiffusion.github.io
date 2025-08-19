@@ -1,0 +1,6 @@
+name = "ed-theme"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Hugo theme based on provided HTML and CSS"
+homepage = "https://example.com"
+tags = ["bootstrap", "flat", "dark"]

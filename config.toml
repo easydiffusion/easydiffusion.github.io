@@ -1,0 +1,36 @@
+baseURL = ""
+title = "Easy Diffusion"
+theme = "ed-theme"
+
+[pagination]
+  pagerSize = 15
+
+[permalinks]
+  [permalinks.page]
+    posts = "/notes/:year/:month/:slug/"
+
+[taxonomies]
+  tag = "tags"
+
+[mediaTypes]
+  [mediaTypes."application/atom+xml"]
+    suffixes = ["xml"]
+
+[outputFormats]
+  [outputFormats.atom]
+    mediaType = "application/atom+xml"
+    noUgly = true
+    baseName = "atom"
+
+[outputs]
+  home = ["HTML", "atom"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+[minify]
+  disableHTML = true
+
+relativeURLs = true
+canonifyURLs = false
+
+disableKinds = ["RSS"]

@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="container">
+  {{ if eq .Data.Term "worklog" }}
+  <div id="postFilter">
+    <span class="filterBy"># filter by: [<a href="{{ "/blog" | relURL }}">posts</a> | <b>worklogs</b>]</span>
+  </div>
+  {{ end }}
+  {{ $pages := .Pages }}
+  {{ partial "post_list.html" (dict "Pages" $pages "Context" .) }}
+</div>
+{{ end }}
