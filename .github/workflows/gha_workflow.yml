@@ -1,0 +1,51 @@
+# Generated initially using github-actions-wizard (https://github.com/cmdr2/github-actions-wizard)
+
+name: CI Pipeline
+run-name: CI Pipeline
+on:
+  push:
+    branches:
+    - main
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: latest
+    - name: Build
+      run: |-
+        hugo --minify
+    - name: Upload pages artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        name: build
+        path: public
+  deploy_to_github_pages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      pages: write
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    steps:
+    - name: Publish Message
+      run: |-
+        echo Publishing the 'build' artifact
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+      with:
+        artifact_name: build
