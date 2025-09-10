@@ -29,7 +29,7 @@ jobs:
       with:
         name: build
         path: public
-  deploy_to_github_pages:
+  deploy_to_github_pages_on_main_branch:
     runs-on: ubuntu-latest
     permissions:
       contents: read
