@@ -23,7 +23,7 @@ jobs:
         hugo-version: latest
     - name: Build
       run: |-
-        hugo --minify
+        hugo --minify --buildFuture
     - name: Upload pages artifact
       uses: actions/upload-pages-artifact@v3
       with:
