@@ -129,5 +129,9 @@ match_path = "blog/posts/.*"
 use_material_blog = true
 rss_feed_enabled = true
 
+# Keep the pre-Zensical feed URL alive for existing feed readers.
+[project.plugins.rss.feeds_filenames]
+rss_created = "atom.xml"
+
 [project.plugins.rss.date_from_meta]
 as_creation = true

@@ -50,6 +50,8 @@ to `main`. It installs Zensical, runs `zensical build`, and uploads `site/` as t
   ([easydiffusion.wiki](https://github.com/easydiffusion/easydiffusion.wiki)), and this repository
   was migrated from Hugo. The blog keeps its previous URL format (`/blog/` post list,
   `/blog/<slug>/` posts). The old wiki URLs and `/tags/...` URLs are no longer served.
+* The blog feed also keeps its previous URL: `[project.plugins.rss.feeds_filenames]` writes the
+  generated feed to `/atom.xml`, so existing feed readers keep working. (The format is RSS 2.0.)
 * The "Help & Community" tab inside the application (`easydiffusion/ui/index.html`) still links to
   the old wiki pages and needs a matching update when the new docs go live (do not change it here;
   it lives in the main app repository).
