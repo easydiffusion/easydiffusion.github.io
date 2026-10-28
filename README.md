@@ -47,7 +47,7 @@ to `main`. It installs Zensical, runs `zensical build`, and uploads `site/` as t
 ## Notes for maintainers
 
 * The documentation was migrated from the project's GitHub wiki
-  ([easydiffusion.wiki](https://github.com/easydiffusion/easydiffusion.wiki)), and this repository
+  ([Easy Diffusion wiki](https://github.com/easydiffusion/easydiffusion/wiki)), and this repository
   was migrated from Hugo. The blog keeps its previous URL format (`/blog/` post list,
   `/blog/<slug>/` posts). The old wiki URLs and `/tags/...` URLs are no longer served.
 * The blog feed also keeps its previous URL: `[project.plugins.rss.feeds_filenames]` writes the
