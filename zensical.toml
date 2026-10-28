@@ -1,0 +1,133 @@
+# Easy Diffusion website & documentation
+# Build with: zensical build
+# Preview locally with: zensical serve
+
+[project]
+site_name = "Easy Diffusion"
+site_description = "A simple 1-click way to create beautiful artwork on your PC using AI, with no tech knowledge required."
+site_url = "https://easydiffusion.github.io/"
+repo_url = "https://github.com/easydiffusion/easydiffusion"
+copyright = "&copy; Easy Diffusion contributors"
+docs_dir = "docs"
+site_dir = "site"
+
+extra_css = [
+  "stylesheets/site.css",
+]
+
+extra_javascript = [
+  "javascripts/blog-sidebar.js",
+]
+
+# The blog (worklog) lives at /blog/, with posts at /blog/<slug>/ (as before).
+
+nav = [
+  { "Home" = "index.md" },
+  { "Blog" = ["blog/index.md"] },
+  { "Getting started" = [
+    "installation.md",
+    "getting-started/how-to-use.md",
+    "getting-started/writing-prompts.md",
+    "getting-started/prompt-syntax.md",
+    "getting-started/image-modifiers.md",
+    "getting-started/inpainting.md",
+    "getting-started/ui-reference.md",
+  ] },
+  { "Docs" = [
+    "docs/index.md",
+    { "Help" = [
+      "docs/troubleshooting.md",
+      { "Discord community" = "docs/help/discord.md" },
+      { "Glossary of Stable Diffusion terms" = "docs/help/glossary.md" },
+    ] },
+    { "Image settings" = [
+      "docs/techniques/samplers.md",
+      "docs/techniques/lora.md",
+      "docs/techniques/embeddings.md",
+      "docs/techniques/controlnet.md",
+      "docs/techniques/seamless-tiling.md",
+      "docs/techniques/clip-skip.md",
+      "docs/techniques/vae.md",
+    ] },
+    { "Saving and sharing" = [
+      "docs/saving/saving-and-metadata.md",
+      "docs/saving/sharing-your-instance.md",
+    ] },
+    { "Performance and hardware" = [
+      "docs/performance/rendering-performance.md",
+      "docs/performance/multiple-gpus.md",
+      "docs/performance/xformers.md",
+      "docs/performance/amd-on-linux.md",
+    ] },
+    { "Models and engines" = [
+      "docs/models/engines.md",
+      "docs/models/v4-engine.md",
+      "docs/models/flux-and-newer-models.md",
+      "docs/models/custom-models.md",
+      "docs/models/sdxl.md",
+      "docs/models/model-merging.md",
+    ] },
+    { "Advanced" = [
+      "docs/reference/custom-modifiers.md",
+      "docs/reference/ui-plugins.md",
+      "docs/reference/config-settings.md",
+      "docs/reference/beta-channel.md",
+    ] },
+  ] },
+]
+
+[project.theme]
+name = "material"
+favicon = "assets/img/logo.png"
+logo = "assets/img/logo.png"
+features = [
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
+  "navigation.sections",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  "search.share",
+  "toc.follow",
+]
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+# Light/dark mode: defaults to the operating system's preference, and can be
+# overridden via the toggle next to the search bar. The first palette whose
+# media query matches is selected on first visit, so the order matters.
+
+# Palette toggle for automatic mode (follows the system preference)
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+scheme = "default"
+media = "(prefers-color-scheme: light)"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[project.plugins.blog]
+blog_dir = "blog"
+post_url_format = "{slug}"
+
+[project.plugins.rss]
+match_path = "blog/posts/.*"
+use_material_blog = true
+rss_feed_enabled = true
+
+[project.plugins.rss.date_from_meta]
+as_creation = true

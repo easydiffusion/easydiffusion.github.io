@@ -1,0 +1,101 @@
+/* Site-wide styles
+ *
+ * Global type scale + homepage hero.
+ * Uses theme CSS variables so the glow/border adapt automatically to the
+ * active color scheme (light "default" and dark "slate").
+ */
+
+/*
+ * Type scale: theme defaults are a bit large, so shift the root font-size
+ * scale down one step (10% smaller) at every breakpoint. The theme is
+ * rem-based, so everything (body text, headings, UI) shrinks proportionally.
+ * Theme defaults: 125% / 137.5% (min-width 100em) / 150% (min-width 125em).
+ */
+html {
+  font-size: 112.5%;
+}
+
+@media screen and (min-width: 100em) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media screen and (min-width: 125em) {
+  html {
+    font-size: 137.5%;
+  }
+}
+
+
+.ed-hero {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.ed-hero__text {
+  flex: 1 1 52%;
+  min-width: 0;
+}
+
+.ed-hero__text .md-button {
+  margin: 0 0.2rem;
+}
+
+/* Splash screenshot framed as an app window card */
+.ed-hero__figure {
+  position: relative;
+  z-index: 0; /* contain the ::before glow within the figure's stacking context */
+  flex: 1 1 48%;
+  min-width: 0;
+  margin: 0;
+}
+
+/* Soft brand-colored glow behind the screenshot */
+.ed-hero__figure::before {
+  content: "";
+  position: absolute;
+  inset: -2rem -1.5rem 0;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--md-primary-fg-color) 22%, transparent),
+    transparent
+  );
+  filter: blur(2rem);
+  z-index: -1;
+}
+
+.ed-hero__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  box-shadow:
+    0 0 0 1px var(--md-default-fg-color--lightest),
+    0 0.6rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+[data-md-color-scheme="slate"] .ed-hero__figure img {
+  box-shadow:
+    0 0 0 1px var(--md-default-fg-color--lightest),
+    0 0.6rem 2rem rgba(0, 0, 0, 0.55);
+}
+
+/* Narrow screens: stack the hero, with the image below the text */
+@media screen and (max-width: 59.9375em) {
+  .ed-hero {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .ed-hero__text {
+    text-align: center;
+  }
+
+  .ed-hero__figure {
+    width: fit-content;
+    max-width: min(56rem, 100%);
+    margin: 1.8rem auto 2.4rem;
+  }
+}
