@@ -17,7 +17,8 @@ Different engines may support different models and features, for e.g. Flux and S
 
 * `Scheduler`: available on v3.5 and v4. See [Samplers](../techniques/samplers.md).
 * `Distilled Guidance`: available on v3.5 and v4 (used by Flux models). See [Flux and other new models](./flux-and-newer-models.md).
-* `Text Encoder`: available on v3.5 and v4.
+* `Text Encoder`: available on v3.5 and v4. See [Text encoders and tokenizers](./text-encoders-and-tokenizers.md).
+* `Tokenizer`: available on v4 only. See [Text encoders and tokenizers](./text-encoders-and-tokenizers.md).
 * `Reference Images`: available on v4 only. See [The v4 engine](./v4-engine.md).
 * `Enable VAE Tiling`: available on the v3.x engines. See [VAE](../techniques/vae.md).
 * `Hypernetwork`: classic (v2.0) engine only.

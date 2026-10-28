@@ -10,7 +10,7 @@ Download the model file and put it into the `models/stable-diffusion` folder (or
 * **SD3**: SD3 and SD3.5 model files.
 * **Lycoris**: Lycoris files go into the `models/lora` folder, and are used like LoRAs (see [LoRA](../techniques/lora.md)).
 
-Some Flux models need a separate text encoder file, if so, select it in the `Text Encoder` dropdown in Image Settings (models with a built-in text encoder don't need this).
+Some Flux models need a separate text encoder file, if so, select it in the `Text Encoder` dropdown in Image Settings (models with a built-in text encoder don't need this). See [Text encoders and tokenizers](./text-encoders-and-tokenizers.md).
 
 ## Settings that matter for these models
 

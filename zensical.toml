@@ -63,6 +63,7 @@ nav = [
       "docs/models/engines.md",
       "docs/models/v4-engine.md",
       "docs/models/flux-and-newer-models.md",
+      "docs/models/text-encoders-and-tokenizers.md",
       "docs/models/custom-models.md",
       "docs/models/sdxl.md",
       "docs/models/model-merging.md",

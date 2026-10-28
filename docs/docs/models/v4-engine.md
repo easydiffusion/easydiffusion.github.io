@@ -31,7 +31,8 @@ The main benefits of the v4 engine are:
 * **Reference Images**: an input section in the UI where you can attach one or more images, for vision-guided models (e.g. image editing models like Qwen). The model looks at these images in addition to your prompt. This input is only available on the v4 engine.
 * **Scheduler**: the `Scheduler` dropdown from Image Settings is available; see [Samplers](../techniques/samplers.md) for the options.
 * **Distilled Guidance**: available for models that use it (e.g. Flux); see [Flux and other new models](./flux-and-newer-models.md).
-* **Text Encoder**: available, for models that need a separate text encoder file.
+* **Text Encoder**: available, for models that need a separate text encoder file (including vision `mmproj` files).
+* **Tokenizer**: available, for models that need an external `tokenizer.json`. See [Text encoders and tokenizers](./text-encoders-and-tokenizers.md).
 
 ## Limitations and caveats
 

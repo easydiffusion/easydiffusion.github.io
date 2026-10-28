@@ -44,7 +44,9 @@
 
 * **Custom VAE**: Advanced topic. Read more about [VAE](../docs/techniques/vae.md).
 
-* **Text Encoder** (v3.5 / v4 engines only): For models that need a separate text encoder file (e.g. some Flux models). Usually left empty.
+* **Text Encoder** (v3.5 / v4 engines only): For models that need a separate text encoder file (e.g. some Flux models), including vision `mmproj` files. Usually left empty. Read more about [Text encoders and tokenizers](../docs/models/text-encoders-and-tokenizers.md).
+
+* **Tokenizer** (v4 engine only): For models that need an external `tokenizer.json` (e.g. MOSS-Image). Usually left empty. Read more about [Text encoders and tokenizers](../docs/models/text-encoders-and-tokenizers.md).
 
 * **Sampler**: The technique used by the AI to create the image. Read more about [Samplers](../docs/techniques/samplers.md).
 
